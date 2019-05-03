@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * GEN-Lab04-refactoring
  * @author Obyka
  * @author batach31
- *
+ * @file OrdersWriterTest
  */
 public class OrdersWriterTest {
     Orders orders = new Orders();

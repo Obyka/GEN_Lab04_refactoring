@@ -2,7 +2,7 @@
  * GEN-Lab04-refactoring
  * @author Obyka
  * @author batach31
- *
+ * @file OrdersWriter
  */
 public class OrdersWriter {
     private Orders orders;
