@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
-
+/***
+ * GEN-Lab04-refactoring
+ * @author Obyka
+ * @author batach31
+ * @file Orders
+ */
 public class Orders {
     private List<Order> orders = new ArrayList<Order>();
 

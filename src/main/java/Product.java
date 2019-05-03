@@ -1,3 +1,9 @@
+/***
+ * GEN-Lab04-refactoring
+ * @author Obyka
+ * @author batach31
+ *
+ */
 public class Product {
     public static final int SIZE_NOT_APPLICABLE = -1;
     private String code;
