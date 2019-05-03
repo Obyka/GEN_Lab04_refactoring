@@ -1,3 +1,9 @@
+/***
+ * GEN-Lab04-refactoring
+ * @author Obyka
+ * @author batach31
+ *
+ */
 public class OrdersWriter {
     private Orders orders;
 
