@@ -1,4 +1,5 @@
 import colors.Color;
+import money.*;
 
 /***
  * GEN-Lab04-refactoring
@@ -10,15 +11,13 @@ public class Product {
     private final String code;
     private final Color color;
     private final Size size;
-    private final double price;
-    private final Currency currency;
+    private Money money;
 
-    public Product(String code, Color color, Size size, double price, Currency currency) {
+    public Product(String code, Color color, Size size, Money money) {
         this.code = code;
         this.color = color;
         this.size = size;
-        this.price = price;
-        this.currency = currency;
+        this.money = money;
     }
 
     public String toString(){
@@ -38,10 +37,10 @@ public class Product {
         }
 
         sb.append("\"price\": ");
-        sb.append(price);
+        sb.append(money.getAmount());
         sb.append(", ");
         sb.append("\"currency\": \"");
-        sb.append(currency);
+        sb.append(money.getCurrency());
         sb.append("\"}, ");
 
         return sb.toString();
