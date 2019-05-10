@@ -1,3 +1,5 @@
+package money;
+
 public enum Currency {
 
     TWD("TWD"),
