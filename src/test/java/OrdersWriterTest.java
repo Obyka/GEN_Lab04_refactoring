@@ -15,8 +15,8 @@ import static org.junit.jupiter.api.Assertions.*;
  * @file OrdersWriterTest
  */
 public class OrdersWriterTest {
-    ArrayList<Order> orders = new ArrayList<>();
-    Order order111 = new Order(111);
+    final ArrayList<Order> orders = new ArrayList<>();
+    final Order order111 = new Order(111);
 
     @BeforeEach
     public void SetupOneOrder() {

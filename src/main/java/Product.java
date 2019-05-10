@@ -8,9 +8,9 @@ import money.*;
  *
  */
 public class Product {
-    private String code;
-    private Color color;
-    private Size size;
+    private final String code;
+    private final Color color;
+    private final Size size;
     private Money money;
 
     public Product(String code, Color color, Size size, Money money) {
