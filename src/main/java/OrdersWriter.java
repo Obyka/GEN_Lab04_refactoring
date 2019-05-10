@@ -17,22 +17,7 @@ public class OrdersWriter {
         StringBuilder sb = new StringBuilder("{\"orders\": [");
 
         for (Order order : orders) {
-            sb.append("{");
-            sb.append("\"id\": ");
-            sb.append(order.getOrderId());
-            sb.append(", ");
-            sb.append("\"products\": [");
-            for (int j = 0; j < order.getProductsCount(); j++) {
-                Product product = order.getProduct(j);
-                sb.append(product.toString());
-            }
-
-            if (order.getProductsCount() > 0) {
-                sb.delete(sb.length() - 2, sb.length());
-            }
-
-            sb.append("]");
-            sb.append("}, ");
+            sb.append(order.toString());
         }
 
         if (orders.size() > 0) {
