@@ -1,9 +1,6 @@
-public enum Color {
+package colors;
 
-    BLUE("blue"),
-    RED("red"),
-    YELLOW("yellow"),
-    UNCOLOR("no color");
+public abstract class Color {
 
     private String colorName;
 
