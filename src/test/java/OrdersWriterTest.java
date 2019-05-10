@@ -1,5 +1,4 @@
 import colors.Blue;
-import colors.Color;
 import colors.Red;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @file OrdersWriterTest
  */
 public class OrdersWriterTest {
-    ArrayList<Order> orders = new ArrayList<Order>();
+    ArrayList<Order> orders = new ArrayList<>();
     Order order111 = new Order(111);
 
     @BeforeEach
@@ -24,7 +23,7 @@ public class OrdersWriterTest {
 
     @Test
     public void NoOrder() {
-        assertEquals("{\"orders\": []}", new OrdersWriter(new ArrayList<Order>()).getContents());
+        assertEquals("{\"orders\": []}", new OrdersWriter(new ArrayList<>()).getContents());
     }
 
     @Test

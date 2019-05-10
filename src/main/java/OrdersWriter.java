@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @file OrdersWriter
  */
 public class OrdersWriter {
-    private ArrayList<Order> orders = new ArrayList();
+    private ArrayList<Order> orders;
 
     public OrdersWriter(ArrayList<Order> orders) {
         this.orders = orders;
@@ -25,13 +25,5 @@ public class OrdersWriter {
         }
 
         return sb.append("]}").toString();
-    }
-
-    private String getSizeFor(Product product) {
-        return product.getSize().toString();
-    }
-
-    private String getColorFor(Product product) {
-        return product.getColor().toString();
     }
 }
