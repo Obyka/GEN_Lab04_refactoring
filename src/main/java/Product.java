@@ -1,3 +1,5 @@
+import colors.Color;
+
 /***
  * GEN-Lab04-refactoring
  * @author Obyka
