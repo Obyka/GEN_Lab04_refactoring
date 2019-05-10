@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /***
  * GEN-Lab04-refactoring
  * @author Obyka
@@ -12,7 +14,7 @@ public class OrdersWriter {
     }
 
     public String getContents() {
-        StringBuffer sb = new StringBuffer("{\"orders\": [");
+        StringBuilder sb = new StringBuilder("{\"orders\": [");
 
         for (int i = 0; i < orders.getOrdersCount(); i++) {
             Order order = orders.getOrder(i);
