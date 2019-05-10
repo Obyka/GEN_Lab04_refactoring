@@ -9,8 +9,8 @@ import java.util.List;
  */
 
 public class Order {
-    private List<Product> products = new ArrayList<>();
-    private int id;
+    private final List<Product> products = new ArrayList<>();
+    private final int id;
 
     public Order(int id) {
         this.id = id;

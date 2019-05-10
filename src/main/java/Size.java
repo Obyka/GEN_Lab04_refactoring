@@ -8,7 +8,7 @@ public enum Size {
     XXL("XXL"),
     INVALID("Invalid Size");
 
-    private String sizeNotation;
+    private final String sizeNotation;
 
     Size(String sizeNotation) {
         this.sizeNotation = sizeNotation;

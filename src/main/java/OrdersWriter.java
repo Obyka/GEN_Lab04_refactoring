@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @file OrdersWriter
  */
 public class OrdersWriter {
-    private ArrayList<Order> orders;
+    private final ArrayList<Order> orders;
 
     public OrdersWriter(ArrayList<Order> orders) {
         this.orders = orders;

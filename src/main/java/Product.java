@@ -7,11 +7,11 @@ import colors.Color;
  *
  */
 public class Product {
-    private String code;
-    private Color color;
-    private Size size;
-    private double price;
-    private Currency currency;
+    private final String code;
+    private final Color color;
+    private final Size size;
+    private final double price;
+    private final Currency currency;
 
     public Product(String code, Color color, Size size, double price, Currency currency) {
         this.code = code;

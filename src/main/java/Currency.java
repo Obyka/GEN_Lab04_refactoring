@@ -3,7 +3,7 @@ public enum Currency {
     TWD("TWD"),
     SGD("SGD");
 
-    private String currencyName;
+    private final String currencyName;
 
     Currency(String currencyName) {
         this.currencyName = currencyName;

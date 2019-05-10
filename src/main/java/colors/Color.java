@@ -2,7 +2,7 @@ package colors;
 
 public abstract class Color {
 
-    private String colorName;
+    private final String colorName;
 
     Color(String colorName) {
         this.colorName = colorName;
