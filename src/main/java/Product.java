@@ -7,7 +7,6 @@ import colors.Color;
  *
  */
 public class Product {
-    public static final int SIZE_NOT_APPLICABLE = -1;
     private String code;
     private Color color;
     private Size size;
@@ -20,26 +19,6 @@ public class Product {
         this.size = size;
         this.price = price;
         this.currency = currency;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public Color getColor() {
-        return color;
-    }
-
-    public Size getSize() {
-        return size;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public Currency getCurrency() {
-        return currency;
     }
 
     public String toString(){
