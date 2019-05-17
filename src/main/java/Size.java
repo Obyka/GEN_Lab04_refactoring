@@ -1,3 +1,11 @@
+/**
+ * GEN-Lab04-refactoring
+ * @author Obyka
+ * @author batach31
+ * @author jerozerbib
+ * @file Size
+ */
+
 public enum Size {
 
     XS("XS"),
