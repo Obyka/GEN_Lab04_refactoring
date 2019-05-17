@@ -1,5 +1,13 @@
 package money;
 
+/**
+ * GEN-Lab04-refactoring
+ * @author Obyka
+ * @author batach31
+ * @author jerozerbib
+ * @file Currency
+ */
+
 public enum Currency {
 
     TWD("TWD"),
