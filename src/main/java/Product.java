@@ -5,7 +5,8 @@ import money.*;
  * GEN-Lab04-refactoring
  * @author Obyka
  * @author batach31
- *
+ * @author jerozerbib
+ * @file Product
  */
 public class Product {
     private final String code;
