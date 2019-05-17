@@ -8,6 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 /***
  * GEN-Lab04-refactoring
  * @author Obyka
@@ -15,27 +16,27 @@ import static org.junit.jupiter.api.Assertions.*;
  * @file OrdersWriterTest
  */
 public class OrdersWriterTest {
-    final ArrayList<Order> orders = new ArrayList<>();
-    final Order order111 = new Order(111);
+    ArrayList<Order> orders = new ArrayList<>();
+    Order order111 = new Order(111);
 
     @BeforeEach
-    public void SetupOneOrder() {
+    public void firstOrderSetUp() {
         orders.add(order111);
     }
 
     @Test
-    public void NoOrder() {
+    public void outputForNoOrderShouldLookLike() {
         assertEquals("{\"orders\": []}", new OrdersWriter(new ArrayList<>()).getContents());
     }
 
     @Test
-    public void OneOrder() {
+    public void outputForOneOrderWithoutProductShouldLookLike() {
         String order111 = "{\"id\": 111, \"products\": []}";
         assertEquals("{\"orders\": [" + order111 + "]}", new OrdersWriter(orders).getContents());
     }
 
     @Test
-    public void TwoOrders() {
+    public void outputForTwoOrdersWithoutProductShouldLookLike() {
         orders.add(new Order(222));
 
         String order111Json = JsonOrder111WithProduct("");
@@ -44,7 +45,7 @@ public class OrdersWriterTest {
     }
 
     @Test
-    public void OneOrderWithOneProduct() {
+    public void outputForOneOrderWithOneProductShouldLookLike() {
         order111.AddProduct(new Product("Shirt", new Blue(), Size.M, new Money(Currency.TWD, 2.99)));
 
         String order111Json = JsonOrder111WithProduct("{\"code\": \"Shirt\", \"color\": \"blue\", \"size\": \"M\", \"price\": 2.99, \"currency\": \"TWD\"}");
@@ -52,7 +53,7 @@ public class OrdersWriterTest {
     }
 
     @Test
-    public void OneOrderWithOneProductNoSize() {
+    public void outputForOneOrderWithOneProductWhithoutSizeShouldLookLike() {
         order111.AddProduct(new Product("Pot", new Red(), Size.INVALID, new Money(Currency.SGD, 16.5)));
 
         String order111Json = JsonOrder111WithProduct("{\"code\": \"Pot\", \"color\": \"red\", \"price\": 16.5, \"currency\": \"SGD\"}");
@@ -63,3 +64,4 @@ public class OrdersWriterTest {
         return "{\"id\": 111, \"products\": [" + productJson + "]}";
     }
 }
+
